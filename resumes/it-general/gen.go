@@ -1,63 +1,58 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
+	"log"
 	"os"
-
+	"strings"
 	"gopkg.in/yaml.v2"
 )
 
-func buildFromGlob(file, glob string, data map[string]interface{}) error {
-	out, err := os.Create(file)
-	defer out.Close()
+func checkError (err error) {
 	if err != nil {
-		return err
+		log.Fatal(err)
 	}
-	t, err := template.ParseGlob(glob)
-	if err != nil {
-		return err
-	}
-	return t.Execute(out, data)
 }
 
-func buildFromFile(file, tmpl string, data map[string]interface{}) error {
-	out, err := os.Create(file)
-	defer out.Close()
-	if err != nil {
-		return err
-	}
-	t, err := template.ParseFiles(tmpl)
-	if err != nil {
-		return err
-	}
-	return t.Execute(out, data)
-}
+var templates *template.Template
 
 func main() {
 	data := map[string]interface{}{}
 	buf, err := os.ReadFile("data.yml")
-	if err != nil {
-		return
-	}
-	err = yaml.Unmarshal(buf, &data)
-	if err != nil {
-		return
-	}
-	entries, err := os.ReadDir("tmpl")
-	if err != nil {
-		return
-	}
-	for _, entry := range entries {
-		fmt.Println(entry.Name())
-	}
+	checkError(err)
 
+	err = yaml.Unmarshal(buf, &data)
+	checkError(err)
+	
+	var allFiles []string
+	files, err := os.ReadDir("tmpl/index.html")
+	checkError(err)
+
+	for _, file := range files {
+		fileName := file.Name()
+		if strings.HasSuffix(fileName, ".html") {
+			allFiles = append(allFiles, "tmpl/index.html/" + fileName)
+		}
+		
+	}
+	
+	templates, err = template.ParseFiles(allFiles...)
+	checkError(err)
+
+	out, err := os.Create("index.html")
+	defer out.Close()
+	checkError(err)
+
+	main := templates.Lookup("_.html")
+	main.Execute(out, data)
+	
 	// TODO detect tmpl and fail if not found
 	// TODO iterate over tmpl directory and
 	//    if directory build a file matching the name of the directory
 	//    from the files in the directory
 	//    or,
 	//    if a file just build from that file
-	//    make sure to detect hte template/html or template/text based on
+	//    make sure to detect the template/html or template/text based on
 	//    suffix
 }
+// */
