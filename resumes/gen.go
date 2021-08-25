@@ -18,10 +18,11 @@ func checkError(err error) {
 var templates *template.Template
 
 func main() {
-	source := os.Args[1]
-	if source == "" {
-		log.Fatal("usage go run gen.go <source directory>")
+	arguments := os.Args
+	if len(arguments) != 2 {
+		log.Fatal("invalid number of arguments. usage go run gen.go <source directory>")
 	}
+	source := arguments[1]
 	data := map[string]interface{}{}
 	buf, err := os.ReadFile(source + "/data.yml")
 	checkError(err)
@@ -48,7 +49,7 @@ func main() {
 	defer out.Close()
 	checkError(err)
 
-	main := templates.Lookup("tmpl/_.html")
+	main := templates.Lookup("_.html")
 	main.Execute(out, data)
 
 	// TODO detect tmpl and fail if not found
