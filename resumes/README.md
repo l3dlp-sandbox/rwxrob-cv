@@ -1,6 +1,6 @@
-# Generating Your Resume
+# Resumes
 
-You may find it useful to recreate this setup for your own resumes.
+Each resume has its own subdirectory and data.yml file. The resume is generated using the tmpl directory. You may find it useful to recreate this setup for your own resumes.
 
 ## Disclaimer
 
@@ -18,11 +18,13 @@ The resources that helped in understanding how the script works. They are not li
 
 ## Instructions for Resume
 
-This resume is built from [YAML structured data](data.yml) (which is
+This resume is built from YAML structured data (which is
 drawn from the CV) and generated from [templates](tmpl) in Go
-(golang) `html/template` syntax. To generate the `index.html` file from
-updated `tmpl` simply do `go run gen.go` from within this
-directory.
+(golang) `html/template` syntax. The PDF is created with Firefox.
 
-The PDF is created with Firefox with all the extras disabled and has
-been tested to ensure it contains transferable fonts. Create the PDF by printing the page generated to save as a PDF.
+1. Create a new subdirectory and `data.yml` inside the subdirectory.
+1. Write the resume in `data.yml`
+1. Generate the `index.html` file from `tmpl` through `go run gen.go <source directory>` from within this
+directory.
+1. Open the `index.html` in Firefox.
+1. Create the PDF by printing the page generated to save as a PDF.
