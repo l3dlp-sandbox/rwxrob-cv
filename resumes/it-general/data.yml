@@ -1,11 +1,8 @@
-Name:     Chong Ying Xiang
+Name:     Yingxiang Chong
 Role:     Cybersecurity Enthusiast • Fledgling Software Developer
 Email:    chong.ying.xiang@gmail.com
+Web:      github.com/whyexis
 Location: Singapore
-
-Mission:
-
-  Lifelong learning of technology to build and secure applications
 
 Skills:
 
@@ -15,30 +12,30 @@ Skills:
 
 Experience:
 
-- Role:     Freelance Sailing Instructor
-  Entity:   Changi Sailing Club
-  Started:  Jul 2020
-  Location: Changi Sailing Club, Singapore
-  Details: 
-  - Instructed clients in basic sailing
-  - Communicated learning objectives in a clear and concise manner
-  - Worked with people ranging from children to adults
-
 - Role:     Marketing Intern
   Entity:   Kinneret Innovation Center
   Started:  January 2020
   Stopped:  June 2020
   Location: Kinneret, Northern District, Israel and Remote, Singapore
   Details:
-  - Wrote a simple Python script to scrap data from a website for market research
+  - Wrote a Python script with requests and Beautiful Soup to scrape data from a website for market research
   - Laid the foundation of the startup's new website on Wix to replace the previous version hosted on WordPress
   - Produced, shot and edited a marketing video
+
+- Role:     Freelance Sailing Instructor
+  Entity:   Changi Sailing Club
+  Started:  Jul 2020
+  Location: Singapore
+  Details: 
+  - Instructed clients in basic sailing
+  - Communicated learning objectives in a clear and concise manner
+  - Worked with people ranging from children to adults
 
 - Role:     Video Editor
   Entity:   National Institute of Education
   Started:  May 2019
   Stopped:  June 2019
-  Location: National Institute of Education, Singapore
+  Location: Singapore
   Details:
   - Decided on shots sequence and motion graphics to tell stories to engage over 900 student teachers and teachers on new teaching practices
 
@@ -61,10 +58,9 @@ Courses:
   Location: Remote, Singapore
   Details:
   - Beyond syllabus, designed a showcase of course projects and exercises using HTML and Bootstrap, deployed with GitHub Pages
-  - Worked on three milestone projects that demonstrates understanding of course content
-  - Wrote more than 600 lines of JavaScript to apply Functions, Conditionals, Program State, Arrays, Loops and Objects
-  - Six weeks flipped classroom with two weekly two-hour classes 
-  - Used Visual Studio Code, Git-Bash, Git, GitHub and Google Chrome 
+  - Worked on three milestone projects that demonstrated understanding of course content
+  - Wrote more than 1000 lines of JavaScript to apply Functions, Conditionals, Program State, Arrays, Loops and Objects
+  - Used Visual Studio Code, Git-Bash, Git, GitHub and Chrome Dev Tools
   - Applied development strategy, debugging and pair programming
 
 - Title:    LearnHack
@@ -73,31 +69,16 @@ Courses:
   Stopped:  June 2021
   Location: Remote, Singapore
   Details:
-  - An online learning platform using  their own content and learning labs
-  - Linux and Windows Fundamentals and 
-  - Computer Networks, Web Fundamentals, OWASP Top 10 
-  - Introduction to Malware
-  - Practical Cryptography
-  - Introduction to Kali Linux, Wireshark, Metasploit
-  - OSINT, Reconnaissance & Scanning 
-  - Offensive PowerShell
-  - Basic Reverse Engineering
+  - An online learning platform that uses a flipped classroom format and labs
+  - Learnt Fundamentals of Operating Systems, the Internet and Pentesting Tools
 
 - Title:    MH8300 Discreetly Discrete Math
   Entity:   Nanyang Technological University
   Started:  January 2021
   Stopped:  May 2021
-  Location: Nanyang Technological University, Singapore
+  Location: Singapore
   Details:
-  - Modular Arithmetic
-  - Coding Theory
-  - Cryptography including Diffie-Hellman Key Exchange and RSA
-  - Introduction to Graph Theory and Eulerian Graphs
-  - Maximum Matching in Bipartitie Graphs
-  - Shortest Path Problem
-  - Minimum Spanning Tree
-  - Travelling Salesman Problem
-  - PageRank
+  - Learnt Modular Arithmetic, Cryptography, Graphs, Trees and their related algorithms
 
 - Title:    Practical Ethical Hacking
   Entity:   The Cyber Mentor
@@ -109,7 +90,7 @@ Courses:
   - Introductory Linux and Python
   - Hacking Methodology including Reconnaissance and Information Gathering; Scanning and Enumeration; Exploitation Basics;
   - Introduction to OWASP Top 10
-  - Active Directory Overview and built own Active Directory lab
+  - Active Directory Overview and built Active Directory lab
   - Used Kali Linux, Greenshot and VMWare 
 
 - Title:    SQL from A to Z Track
@@ -126,12 +107,12 @@ Courses:
   Entity:   Nanyang Technological University
   Started:  August 2019
   Stopped:  November 2019
-  Location: Nanyang Technological University, Singapore
+  Location: Singapore
   Details:
   - Wrote Python to understand Functions, Conditionals, Loops, Arrays, Dictionaries, Objects, Regular Expression
-  - Worked on weekly assignments, a capstone project and a timed in person coding assessment
-  - Learnt how Python can be applied to linguistics through data analysis and machine learning
-  - Used Jupyter Notebooks and Anaconda
+  - Worked on weekly assignments, a capstone project and an in-person timed coding assessment
+  - Learnt how linguistics can use Python for data analysis and machine learning
+  - Used Jupyter Notebooks, Python NLTK, requests and re modules
 
 Competitions:
 
@@ -150,4 +131,4 @@ Languages:
 - English (native)
 - Chinese (spoken and written)
 
-Keywords: [Linux, Virtual Machines, VMWare, Virtual Box, Python, Bash, HTML, CSS, JavaScript, SQL, Markdown, nmap, Vim/Vi, VSCode, Git, GitHub]
+Keywords: [Linux, Virtual Machines, VMWare, Virtual Box, VSCode, Vim/Vi, Git, GitHub, Python, Bash, HTML, CSS, JavaScript, SQL, Markdown]
